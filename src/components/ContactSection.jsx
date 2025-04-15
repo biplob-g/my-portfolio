@@ -71,14 +71,13 @@ const ContactSection = () => {
     {
       icon: <Phone size={24} />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91 9157311288",
+      link: "tel:+919157311288"
     },
     {
       icon: <MapPin size={24} />,
       title: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com"
+      value: "Gujarat, India",
     }
   ];
 

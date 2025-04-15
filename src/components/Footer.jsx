@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
-            <a href="#" className="text-xl font-bold">GhatakBits</a>
+            <a href="#" className="text-xl font-bold">Ghatak<span className="text-[#FF5B36] ml-1">Bits</span></a>
           </div>
           
           <div className="flex space-x-4 mb-4 md:mb-0">

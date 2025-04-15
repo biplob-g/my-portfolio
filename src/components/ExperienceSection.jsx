@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import freelancerLogo from "../assets/images/freelance.webp";
 
 const ExperienceSection = () => {
   const experiences = [
@@ -22,7 +23,7 @@ const ExperienceSection = () => {
       title: "Front-End Developer",
       company: "Freelancer",
       period: "Dec 2020 - Jan 2023",
-      logo: "meta",
+      logo: "freelancer",
       description: [
         "Handled both frontend and backend WordPress development to deliver complete, functional websites.",
         "Teamed up with other developers to revamp legacy websites, enhancing structure, user experience, and design.",
@@ -92,9 +93,9 @@ const ExperienceSection = () => {
 function getLogoBackground(logo) {
   switch (logo) {
     case 'pixelmattic': // Added case for Pixelmattic
-      return '#FF5B36'; // Use the same color as the logo
-    case 'starbucks':
-      return '#006241';
+      return '#ffffff'; // Use the same color as the logo
+    case 'freelancer':
+      return '#ffffff';
     default:
       return '#FF5B36';
   }
@@ -105,7 +106,7 @@ function getBorderColor(logo) {
   switch (logo) {
     case 'pixelmattic': // Added case for Pixelmattic
       return '#FF5B36'; // Use the same color as the logo
-    case 'starbucks':
+    case 'freelancer':
       return '#1877f2';
     default:
       return '#FF5B36';
@@ -117,8 +118,9 @@ function getLogoContent(logo) {
   switch (logo) {
     case 'pixelmattic': // Added case for Pixelmattic
       return <img src="https://www.pixelmattic.com/wp-content/uploads/2019/04/cropped-Pixelmattic-fav-icon_rounded-180x180.png" alt="Pixelmattic Logo" className="h-8 w-8" />; // Return the logo image
-    case 'starbucks':
-      return '☕';
+    case 'freelancer':
+      return <img src={freelancerLogo} alt="freelancer Logo" className="h-8 w-8" />; // Return the logo image
+
     default:
       return '';
   }

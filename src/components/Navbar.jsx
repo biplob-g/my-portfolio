@@ -33,7 +33,7 @@ const Navbar = () => {
     } mx-4 md:mx-8 lg:mx-12 mt-4 rounded-full animate-float`}>
       <div className="container mx-auto max-w-7xl">
         <div className="flex items-center justify-between py-3 px-6">
-          <a href="#" className="text-2xl font-bold">GhatakBits</a>
+          <a href="#" className="text-2xl font-bold">Ghatak<span className="text-[#FF5B36] ml-1">Bits</span></a>
           
           <div className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (

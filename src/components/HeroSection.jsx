@@ -1,10 +1,13 @@
 
 import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
+import heroBg from "../assets/images/hero-bg.jpg";
+import myProfile from "../assets/images/my-profile.png";
+import cv from "../assets/pdf/Biplob-Ghatak.pdf";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-16 relative bg-[url('https://img.freepik.com/premium-photo/beautiful-hd-grid-line-with-black-black-shadow-background_1221760-568.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-background/80">
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-16 relative bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-background/80" style={{backgroundImage: `url(${heroBg})`}}>
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <motion.div
@@ -29,7 +32,8 @@ const HeroSection = () => {
                View Projects
               </a>
               <a 
-                href="#projects" 
+                href={cv} 
+                target="_blank"
                 className="px-6 py-3 bg-transparent text-[#FF5B36] border border-[#FF5B36] rounded-md font-medium hover:opacity-90 transition-opacity"
               >
                 Download CV
@@ -45,7 +49,7 @@ const HeroSection = () => {
           >
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-background p-2 bg-gradient-to-r from-[rgba(255,91,54,0.2)] to-[rgba(255,150,100,0.2)]">
               <img 
-                src="public/my-profile.png" 
+                src={myProfile} 
                 alt="Earth Planet" 
                 className="w-full h-full object-cover rounded-full"
               />
